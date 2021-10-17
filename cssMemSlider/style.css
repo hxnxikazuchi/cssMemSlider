@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #353b48;
+  font-family: 'Noto Sans Mono', monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  border-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 40rem;
+  overflow: hidden;
+  margin: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem 0;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.3125rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0.625rem;
+}
+
+.bar {
+  width: 3.125rem;
+  height: 0.625rem;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bar:focus {
+  background: #fff;
+}
+
+.bar:hover {
+  background: #fff;
+}
+
+input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+#mem1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#mem2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#mem3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#mem4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#mem5:checked ~ .s1 {
+  margin-left: -80%;
+}
+#mem6:checked ~ .s1 {
+  margin-left: -100%;
+}
+
+@media (max-width: 454px) {
+  html {
+    font-size: 10px;
+  }
+}
