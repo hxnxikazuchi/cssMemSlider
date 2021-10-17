@@ -31,12 +31,12 @@ img {
 
 .container {
   width: 100%;
-  max-width: 640px;
+  max-width: 40rem;
   overflow: hidden;
-  margin: 20px;
+  margin: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 20px 0;
+  gap: 1.25rem 0;
 }
 
 .slides {
@@ -56,30 +56,26 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 h1 {
   color: #fff;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 400;
-  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
 
 .navigation {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0 10px;
-}
-
-.navigation label {
-  width: 50px;
+  gap: 0 0.625rem;
 }
 
 .bar {
-  width: 40px;
-  height: 10px;
+  width: 3.125rem;
+  height: 0.625rem;
   border: 1px solid #fff;
   cursor: pointer;
   transition: all 0.3s;
@@ -117,4 +113,10 @@ input {
 }
 #mem6:checked ~ .s1 {
   margin-left: -100%;
+}
+
+@media (max-width: 454px) {
+  html {
+    font-size: 10px;
+  }
 }
