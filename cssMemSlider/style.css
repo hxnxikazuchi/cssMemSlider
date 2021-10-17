@@ -85,6 +85,10 @@ h1 {
   transition: all 0.3s;
 }
 
+.bar:focus {
+  background: #fff;
+}
+
 .bar:hover {
   background: #fff;
 }
